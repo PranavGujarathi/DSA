@@ -10,15 +10,20 @@ int main()
 
     for (int i = 0; i < n; i++)
     {
-        //space 
+        // space
         for (int j = 0; j < n - i - 1; j++)
         {
             cout << " ";
         }
-    
-        for (int j = 0; j < 2 * i + 1; j++)
+
+        // characters
+        char ch = 'A';
+        int breakPoint = (2 * i + 1) / 2;
+        for (int j = 1; j <= 2 * i + 1; j++)
         {
-            cout << "*";
+            cout << ch;
+            if(j<= breakPoint) ch++;
+            else ch--;
         }
         cout << endl;
     }
@@ -27,9 +32,8 @@ int main()
 }
 
 // Enter value of n :5
-//     *
-//    ***
-//   *****
-//  *******
-// *********
- 
+//     A
+//    ABA
+//   ABCBA
+//  ABCDCBA
+// ABCDEDCBA

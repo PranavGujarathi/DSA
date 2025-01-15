@@ -10,26 +10,21 @@ int main()
 
     for (int i = 0; i < n; i++)
     {
-        //space 
-        for (int j = 0; j < n - i - 1; j++)
+        char ch = 'A' +i;
+        for (int j = 0; j <= i; j++)
         {
-            cout << " ";
-        }
-    
-        for (int j = 0; j < 2 * i + 1; j++)
-        {
-            cout << "*";
+            cout << ch << " ";
         }
         cout << endl;
+        
     }
 
     return 0;
 }
-
-// Enter value of n :5
-//     *
-//    ***
-//   *****
-//  *******
-// *********
  
+// Enter value of n :5
+// A 
+// B B
+// C C C
+// D D D D
+// E E E E E
