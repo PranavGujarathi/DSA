@@ -15,6 +15,13 @@ void pattern18(int n)
     }
 }
 
+// In coding ninja quetion
+// E 
+// E D 
+// E D C 
+// E D C B 
+// E D C B A 
+
 int main()
 {
 
