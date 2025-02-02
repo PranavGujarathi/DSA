@@ -39,7 +39,7 @@ int main()
 
     cout<<"In coding ninja quetion"<<endl;
 
-    pattern18(n);
+    // pattern18(n);
 
     return 0;
 }
